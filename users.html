@@ -1,0 +1,13 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h2>email address' entered</h2>
+        {% for user in results %}
+                <p>{{user["id"]}}</p>
+                <p>{{user["email"]}}</p>
+                <p>{{user["created"]}}</p>
+        {% endfor %}
+    </body>
+</html>

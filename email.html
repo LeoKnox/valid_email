@@ -1,0 +1,18 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="/new" method="POST">
+            <p>Email Address: <input type="text" name="email"></p>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for i in messages %}
+                        <p> {{i}}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
